@@ -42,3 +42,4 @@ An enterprise-grade, GDPR-compliant Retrieval-Augmented Generation (RAG) agent e
 - **Vector Database:** Pinecone Serverless
 - **Frontend:** Lightweight responsive chat UI using Tailwind CSS & Vanilla JavaScript
 - **SDKs & Tooling:** Boto3, Python-Dotenv
+- **OWASP LLM Vulnerability Mitigation:** Defended against Denial of Wallet (OWASP LLM06) and prompt injection by implementing `slowapi` IP-based rate limiting (5 requests/minute) and strict Pydantic input boundaries (500-character max). A `bot_test.py` script is included in the repository to simulate and verify token-bucket rate limit enforcement.
